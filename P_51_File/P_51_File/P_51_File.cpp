@@ -12,13 +12,12 @@
 #include <string.h>
 #include <math.h>
 
-
 int main()
 {
 
 	FILE *fp1, *fp2;
 
-	fp1 = fopen("input.txt", "r"); /* 開啟並僅供讀取 */
+	fp1 = fopen("input.txt", "r");	/* 開啟並僅供讀取 */
 	fp2 = fopen("output.txt", "w"); /* 開啟並僅供寫入 */
 
 	if (fp1 == NULL)
@@ -34,10 +33,6 @@ int main()
 	}
 	fp1 = fprintf("input");
 
-
 	system("pause");
 	return 0;
-
 }
-
-

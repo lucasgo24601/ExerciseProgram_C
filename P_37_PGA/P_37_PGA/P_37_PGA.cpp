@@ -17,12 +17,11 @@
 
 int main()
 {
-	char PGA[5][6] = { "TRGSJ",
-					"XDOKI",
-					"MZVLN",
-					"WPABE",
-					"UQHCE"
-	};
+	char PGA[5][6] = {"TRGSJ",
+					  "XDOKI",
+					  "MZVLN",
+					  "WPABE",
+					  "UQHCE"};
 
 	char s[99], temp;
 	int y, x;
@@ -30,7 +29,6 @@ int main()
 	scanf("%d %d", &y, &x);
 	PGA[y][x] = ' ';
 	gets(s);
-
 
 	for (int i = 0; i < strlen(s); i++)
 		switch (s[i])
@@ -66,10 +64,5 @@ int main()
 			printf("This puzzle has no final configuration.”\n");
 		}
 
-
-
 	return 0;
-
 }
-
-

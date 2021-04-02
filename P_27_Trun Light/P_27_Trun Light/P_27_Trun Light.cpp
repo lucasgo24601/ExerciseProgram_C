@@ -25,14 +25,11 @@ int main()
 
 	for (i = 1; i <= k; i++)
 		for (j = 1; j <= n; j++)
-			a[i*j] = !a[i*j];
+			a[i * j] = !a[i * j];
 
 	for (int x = 1; x <= n; x++)
 		if (a[x] == 1)
 			printf("%d ", x);
 
-
 	return 0;
-
 }
-

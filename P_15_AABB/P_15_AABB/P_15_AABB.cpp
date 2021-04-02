@@ -10,7 +10,7 @@
 #include "pch.h"
 #include <iostream>
 #include <stdio.h>
-#include <math.h> 
+#include <math.h>
 
 int main()
 {

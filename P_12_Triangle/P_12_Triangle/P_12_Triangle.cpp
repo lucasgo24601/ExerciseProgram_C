@@ -18,7 +18,7 @@ int main()
 	scanf("%d %d %d", &a, &b, &c);
 	if (a + b < c | b + c < a | a + c < b)
 		printf("not a triangle");
-	else if (a*a + b * a == c * c | b * b + c * c == a * a | a * a + c * c == b * b)
+	else if (a * a + b * a == c * c | b * b + c * c == a * a | a * a + c * c == b * b)
 		printf("yes");
 	else
 		printf("no");

@@ -17,5 +17,6 @@ int main()
 	scanf("%d", &x);
 	printf("%d%d%d\n", x % 10, x % 100 / 10, x / 100);
 	printf("%d", x % 10 * 100 + x % 100 / 10 * 10 + x / 100);
-}
 
+	return 0;
+}

@@ -28,11 +28,5 @@ int main()
 		else
 			printf("%c", a[i]);
 
-
-
-
 	return 0;
-
 }
-
-

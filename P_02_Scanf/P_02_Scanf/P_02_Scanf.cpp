@@ -13,10 +13,10 @@
 
 int main()
 {
-	const double pi = acos(-1.0);
+	const double PI = acos(-1.0);
 	float r, h;
 	scanf("%f%f", &r, &h);
-	printf("%.3f", (2.0*pi*r*r) + (2.0*r*h*pi));
+	printf("%.3f", (2.0 * PI * r * r) + (2.0 * r * h * PI));
 
 	return 0;
 }

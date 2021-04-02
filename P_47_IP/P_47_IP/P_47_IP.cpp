@@ -1,5 +1,5 @@
 ﻿/******************************************************************
-* Name：階之合
+* Name：IP
 *
 * Goal：可以用一個網絡地址和一個子網掩碼描述一個子網（即連續的IP地址範圍）。其中子網
 *		掩碼包含32個二進制位，前32-n位為1，後n位為0，網絡地址的前32-n位任意，後n位為0。
@@ -24,8 +24,7 @@
 int IP_short_char_three[99][4];
 int IP_short_int_three[99][4];
 
-
-long long  number2digit(int *number)
+long long number2digit(int *number)
 {
 	long long sum = 0, ten = 1, count = number[3];
 
@@ -55,7 +54,6 @@ int sub(int min, int max, int i)
 				break;
 		}
 
-
 	printf("%d", 255 - two + 1);
 	if (i != 3)
 		printf(".");
@@ -70,7 +68,6 @@ void transform(char IP[], int set)
 {
 	int count = 0, count_1 = 0, one = 0, ten = 0, max, min, box[4];
 
-
 	/*	194.85.160.177
 		194.85.160.183
 
@@ -83,8 +80,6 @@ void transform(char IP[], int set)
 		IP_short_int_three [  set=2  ] = 19485160183
 		IP_short_int_three [  set=1  ][  ten=1  ] = 194
 		IP_short_int_three [  set=1  ][  ten=2  ] = 85
-
-
 	*/
 	for (int i = 0; i < strlen(IP) + 1; i++)
 		if ((IP[i] == '.') | (i == strlen(IP)))
@@ -97,16 +92,12 @@ void transform(char IP[], int set)
 		else
 			IP_short_char_three[ten][one++] = IP[i] - 48;
 
-
 	/*for (int i = 0; i < ten; i++)
 		printf(" %d ", IP_short_int_three[set][i]);
 	printf(	"\n");*/
 
-
-
 	if (set == 2)
 	{
-
 
 		for (int i = 0; i <= IP_short_char_three[i][3]; i++)
 		{
@@ -127,27 +118,20 @@ void transform(char IP[], int set)
 			printf("%d", box[i]);
 			if (i != IP_short_char_three[i][3])
 				printf(".");
-
 		}
-
-
-
-
 	}
-
 }
 
 int main()
 {
-	char IP[3][99] = { "194.85.160.177",
-					   "194.85.160.183",
-					   "194.85.160.178" };
+	char IP[3][99] = {"194.85.160.177",
+					  "194.85.160.183",
+					  "194.85.160.178"};
 
 	printf("please enter three IP address: \n");
 
 	for (int i = 0; i < 3; i++)
 		scanf("%s", IP[i]);
-
 
 	for (int i = 0; i < 3; i++)
 		transform(IP[i], i);
@@ -155,4 +139,3 @@ int main()
 	system("pause");
 	return 0;
 }
-

@@ -26,7 +26,5 @@ int main()
 	}
 	printf("%lld", count);
 
-
 	return 0;
 }
-

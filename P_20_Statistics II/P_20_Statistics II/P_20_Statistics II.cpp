@@ -7,7 +7,6 @@
 * Modify record：18/11/12 By Lucas
 ******************************************************************/
 
-
 #include "pch.h"
 #include <iostream>
 #include <stdio.h>
@@ -22,21 +21,21 @@ int main()
 		int i, min = INF, max = -INF, temp;
 		float sum = 0, avg = 0;
 		scanf("%d", &x);
-		if (x == 0) break;
+		if (x == 0)
+			break;
 		for (i = 0; i < x; i++)
 		{
 			scanf("%d", &temp);
-			if (min > temp) min = temp;
-			if (max < temp) max = temp;
+			if (min > temp)
+				min = temp;
+			if (max < temp)
+				max = temp;
 
 			sum += temp;
 			avg = sum / x;
 		}
 		printf("%d  %d  %.3f\n", min, max, avg);
-
 	}
-
 
 	return 0;
 }
-

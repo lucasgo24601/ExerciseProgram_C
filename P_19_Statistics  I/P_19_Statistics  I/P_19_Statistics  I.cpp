@@ -18,9 +18,12 @@ int main()
 	float sum = 0, count = 0;
 	while (scanf("%d", &x))
 	{
-		if (x > 1000) break;
-		if (min > x) min = x;
-		if (max < x) max = x;
+		if (x > 1000)
+			break;
+		if (min > x)
+			min = x;
+		if (max < x)
+			max = x;
 		count++;
 		sum += x;
 	}
@@ -29,4 +32,3 @@ int main()
 	system("pause");
 	return 0;
 }
-
